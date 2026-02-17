@@ -1,0 +1,37 @@
+@model Deneme.Models.Not
+
+@{
+    ViewData["Title"] = "Yeni Not";
+}
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <h3 class="mb-3">📝 Yeni Not Ekle</h3>
+
+        <form asp-action="Ekle" method="post">
+
+            <div class="mb-3">
+                <label class="form-label">Başlık</label>
+                <input asp-for="Baslik" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">İçerik</label>
+                <textarea asp-for="Icerik" class="form-control" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                Kaydet
+            </button>
+
+            <a asp-action="Index" class="btn btn-secondary">
+                Geri
+            </a>
+
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,68 @@
+@model IEnumerable<Deneme.Models.Not>
+
+@{
+    ViewData["Title"] = "Not Defteri";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>📒 Not Defteri</h2>
+
+        <a asp-action="Ekle" class="btn btn-success">
+            + Yeni Not
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            Henüz not eklenmemiş.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 mb-4">
+
+                    <div class="card shadow-sm h-100">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                @item.Baslik
+                            </h5>
+
+                            <p class="card-text text-muted">
+                                @(item.Icerik?.Length > 100
+                                    ? item.Icerik.Substring(0, 100) + "..."
+                                    : item.Icerik)
+                            </p>
+
+                        </div>
+
+                        <div class="card-footer text-center">
+
+                            <a asp-action="Detay" asp-route-id="@item.Id"
+                               class="btn btn-sm btn-info">Görüntüle</a>
+
+                            <a asp-action="Duzenle" asp-route-id="@item.Id"
+                               class="btn btn-sm btn-warning">Düzenle</a>
+
+                            <a asp-action="Sil" asp-route-id="@item.Id"
+                               class="btn btn-sm btn-danger">Sil</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+
+        </div>
+    }
+
+</div>

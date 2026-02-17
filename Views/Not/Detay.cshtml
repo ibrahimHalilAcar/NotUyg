@@ -1,0 +1,41 @@
+@model Deneme.Models.Not
+
+@{
+    ViewData["Title"] = "Not Detayı";
+}
+
+<div class="container mt-5">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+            <h4>📄 Not Detayı</h4>
+        </div>
+
+        <div class="card-body">
+
+            <h3 class="mb-3">@Model.Baslik</h3>
+
+            <p style="white-space: pre-line;">
+                @Model.Icerik
+            </p>
+
+        </div>
+
+        <div class="card-footer text-center">
+
+            <a asp-action="Duzenle" asp-route-id="@Model.Id"
+               class="btn btn-warning">
+                Düzenle
+            </a>
+
+            <a asp-action="Index"
+               class="btn btn-secondary">
+                Geri
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
