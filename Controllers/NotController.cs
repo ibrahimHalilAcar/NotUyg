@@ -58,8 +58,8 @@ namespace Deneme.Controllers
         {
            
             var Bul =gvt.Notlar.SingleOrDefault(x => x.Id==y.Id);
-            Bul?.Baslik = y.Baslik;
-            Bul?.Icerik = y.Icerik;
+            Bul.Baslik = y.Baslik;
+            Bul.Icerik = y.Icerik;
             gvt.SaveChanges();
            
 
