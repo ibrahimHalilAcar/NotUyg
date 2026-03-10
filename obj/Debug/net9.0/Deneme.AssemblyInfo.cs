@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Deneme")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f7b79f7ce3024b6ca8e211ececae62976bf588b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2f3a36fd7213d3d630f94e79754e4b6fc783f77")]
 [assembly: System.Reflection.AssemblyProductAttribute("Deneme")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Deneme")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
