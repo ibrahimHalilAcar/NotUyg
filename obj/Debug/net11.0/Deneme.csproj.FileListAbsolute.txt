@@ -221,3 +221,4 @@ C:\Users\Lenovo\Desktop\Deneme\bin\Debug\net11.0\runtimes\ios-arm64\native\e_sql
 C:\Users\Lenovo\Desktop\Deneme\bin\Debug\net11.0\runtimes\iossimulator-arm64\native\e_sqlite3.a
 C:\Users\Lenovo\Desktop\Deneme\bin\Debug\net11.0\runtimes\iossimulator-x64\native\e_sqlite3.a
 C:\Users\Lenovo\Desktop\Deneme\bin\Debug\net11.0\runtimes\iossimulator-x86\native\e_sqlite3.a
+C:\Users\Lenovo\Desktop\Deneme\obj\Debug\net11.0\Deneme.sourcelink.json
